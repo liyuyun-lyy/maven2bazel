@@ -1,0 +1,102 @@
+<html><head><title>Indexing diagnostics of &#39;build-buddha&#39;</title><style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style><script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script></head><body><div class="aggregate-report-content"><h1>Project name</h1>build-buddha<div><h1>Indexing history</h1><table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption><thead><tr><th colspan="6">Time</th><th colspan="6">Files</th><th rowspan="2">IDE</th></tr><tr><th>Started</th><th>Total</th><th>Scanning</th><th>Indexing</th><th>Content loading</th><th>Finished</th><th>Providers</th><th>Scanned</th><th>Shared indexes (w/o content loading)</th><th>Scheduled for indexing</th><th>Shared indexes (content loaded)</th><th>Total indexed (shared indexes included)</th></tr></thead><tbody><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-51-18.312.html"><td><strong>Project roots have changed</strong><br/>16:51:17 08 Nov</td><td>692 ms</td><td>418 ms</td><td>0</td><td>0</td><td>16:51:18 08 Nov</td><td>367</td><td>142047</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-50-37.428.html"><td><strong>On refresh of 20 files</strong><br/>16:50:37 08 Nov</td><td>44 ms</td><td>&lt; 1 ms</td><td>18 ms</td><td>&lt; 1 ms</td><td>16:50:37 08 Nov</td><td>1</td><td>20</td><td>0</td><td>20</td><td>0</td><td>20</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-46-09.914.html"><td><strong>Project roots have changed</strong><br/>16:46:08 08 Nov</td><td>1 s 397 ms</td><td>1 s 223 ms</td><td>81 ms</td><td>6 ms</td><td>16:46:09 08 Nov</td><td>367</td><td>142069</td><td>0</td><td>42</td><td>0</td><td>42</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-28-59.712.html"><td><strong>On refresh of 209 files</strong><br/>16:28:59 08 Nov</td><td>287 ms</td><td>1 ms</td><td>261 ms</td><td>21 ms</td><td>16:28:59 08 Nov</td><td>1</td><td>209</td><td>0</td><td>209</td><td>0</td><td>209</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-28-59.403.html"><td><strong>Project roots have changed</strong><br/>16:28:08 08 Nov</td><td>50 s 777 ms</td><td>8 s 888 ms</td><td>41 s 825 ms</td><td>6 s 664 ms</td><td>16:28:59 08 Nov</td><td>367</td><td>142071</td><td>0</td><td>96664</td><td>0</td><td>96664</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-27-57.468.html"><td><strong>Project roots have changed</strong><br/>16:27:25 08 Nov</td><td>32 s 451 ms</td><td>4 s 2 ms</td><td>28 s 417 ms</td><td>2 s 555 ms</td><td>16:27:57 08 Nov</td><td>8</td><td>43098</td><td>0</td><td>42220</td><td>0</td><td>42220</td><td>IC-212.4746.92</td></tr></tbody></table></div></div></body></html>

@@ -1,0 +1,102 @@
+<html><head><title>Indexing diagnostics of &#39;demo&#39;</title><style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+table.two-columns td {
+  width: 50%;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: lightgrey;
+}
+
+td {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+        
+.stats-content {
+  margin-left: 20%;
+}
+
+.aggregate-report-content {
+  margin-left: 10%;
+}
+
+.navigation-bar {
+  width: 15%;
+  background-color: lightgrey;
+  position: fixed;
+  height: 100%;
+}
+
+div.navigation-bar ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+div.navigation-bar ul li a, label {
+  display: block;
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+label input {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+div.navigation-bar ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.minor-data {}
+
+.invisible {
+  display: none;
+}
+
+.jetbrains-logo {
+  width: 50%;
+  bottom: 5%;
+  position: absolute;
+  left: 20%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.linkable-table-row:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}</style><script>document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.getElementsByClassName("linkable-table-row")
+  for (const row of rows) {
+    const href = row.getAttribute("href")
+    row.addEventListener("click", () => {
+      window.open(href, "_blank");
+    });
+  }
+});</script></head><body><div class="aggregate-report-content"><h1>Project name</h1>demo<div><h1>Indexing history</h1><table class="centered-text"><caption style="caption-side: bottom; text-align: right; font-size: 14px">Hover for details</caption><thead><tr><th colspan="6">Time</th><th colspan="6">Files</th><th rowspan="2">IDE</th></tr><tr><th>Started</th><th>Total</th><th>Scanning</th><th>Indexing</th><th>Content loading</th><th>Finished</th><th>Providers</th><th>Scanned</th><th>Shared indexes (w/o content loading)</th><th>Scheduled for indexing</th><th>Shared indexes (content loaded)</th><th>Total indexed (shared indexes included)</th></tr></thead><tbody><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-23-24.304.html"><td><strong>Project roots have changed</strong><br/>16:23:19 08 Nov</td><td>4 s 311 ms</td><td>4 s 249 ms</td><td>0</td><td>0</td><td>16:23:24 08 Nov</td><td>75</td><td>70240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-20-14.960.html"><td><strong>Project roots have changed</strong><br/>16:20:09 08 Nov</td><td>5 s 393 ms</td><td>5 s 337 ms</td><td>0</td><td>0</td><td>16:20:14 08 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-16-43.082.html"><td><strong>Project roots have changed</strong><br/>16:16:35 08 Nov</td><td>7 s 354 ms</td><td>7 s 278 ms</td><td>0</td><td>0</td><td>16:16:43 08 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-08-16-08-56.534.html"><td><strong>Project roots have changed</strong><br/>16:08:52 08 Nov</td><td>3 s 592 ms</td><td>3 s 521 ms</td><td>0</td><td>0</td><td>16:08:56 08 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-02-15-41-47.554.html"><td><strong>Project roots have changed</strong><br/>15:41:43 02 Nov</td><td>4 s 316 ms</td><td>4 s 243 ms</td><td>0</td><td>0</td><td>15:41:47 02 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-16-16-47.401.html"><td><strong>Project roots have changed</strong><br/>16:16:41 01 Nov</td><td>6 s 178 ms</td><td>6 s 8 ms</td><td>0</td><td>0</td><td>16:16:47 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-16-09-44.149.html"><td><strong>Project roots have changed</strong><br/>16:09:41 01 Nov</td><td>3 s 113 ms</td><td>2 s 955 ms</td><td>0</td><td>0</td><td>16:09:44 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-16-04-58.061.html"><td><strong>Project roots have changed</strong><br/>16:04:54 01 Nov</td><td>3 s 610 ms</td><td>3 s 303 ms</td><td>0</td><td>0</td><td>16:04:58 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-16-00-23.874.html"><td><strong>Project roots have changed</strong><br/>16:00:20 01 Nov</td><td>3 s 65 ms</td><td>2 s 796 ms</td><td>0</td><td>0</td><td>16:00:23 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-15-58-00.263.html"><td><strong>Project roots have changed</strong><br/>15:57:56 01 Nov</td><td>3 s 413 ms</td><td>3 s 64 ms</td><td>0</td><td>0</td><td>15:58:00 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-15-20-56.929.html"><td><strong>Project roots have changed</strong><br/>15:20:53 01 Nov</td><td>2 s 996 ms</td><td>2 s 673 ms</td><td>0</td><td>0</td><td>15:20:56 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-14-44-20.413.html"><td><strong>Project roots have changed</strong><br/>14:44:17 01 Nov</td><td>3 s 337 ms</td><td>3 s 22 ms</td><td>0</td><td>0</td><td>14:44:20 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-11-01-14-36-26.859.html"><td><strong>Project roots have changed</strong><br/>14:36:23 01 Nov</td><td>3 s 497 ms</td><td>3 s 227 ms</td><td>0</td><td>0</td><td>14:36:26 01 Nov</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-08-28.465.html"><td><strong>Project roots have changed</strong><br/>18:08:24 31 Oct</td><td>4 s 196 ms</td><td>4 s 33 ms</td><td>0</td><td>0</td><td>18:08:28 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-07-07.115.html"><td><strong>Project roots have changed</strong><br/>18:07:03 31 Oct</td><td>3 s 457 ms</td><td>3 s 137 ms</td><td>0</td><td>0</td><td>18:07:07 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-06-15.291.html"><td><strong>Project roots have changed</strong><br/>18:06:11 31 Oct</td><td>4 s 238 ms</td><td>3 s 860 ms</td><td>92 ms</td><td>48 ms</td><td>18:06:15 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>1</td><td>0</td><td>1</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-05-43.823.html"><td><strong>Project roots have changed</strong><br/>18:05:38 31 Oct</td><td>4 s 908 ms</td><td>4 s 648 ms</td><td>77 ms</td><td>37 ms</td><td>18:05:43 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>1</td><td>0</td><td>1</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-04-10.975.html"><td><strong>Project roots have changed</strong><br/>18:04:06 31 Oct</td><td>4 s 128 ms</td><td>3 s 984 ms</td><td>0</td><td>0</td><td>18:04:10 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-18-03-00.540.html"><td><strong>Project roots have changed</strong><br/>18:02:55 31 Oct</td><td>4 s 845 ms</td><td>4 s 584 ms</td><td>0</td><td>0</td><td>18:03:00 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr><tr class="linkable-table-row" href="diagnostic-2022-10-31-17-59-49.473.html"><td><strong>Project roots have changed</strong><br/>17:59:44 31 Oct</td><td>4 s 625 ms</td><td>3 s 938 ms</td><td>0</td><td>0</td><td>17:59:49 31 Oct</td><td>75</td><td>70236</td><td>0</td><td>0</td><td>0</td><td>0</td><td>IC-212.4746.92</td></tr></tbody></table></div></div></body></html>

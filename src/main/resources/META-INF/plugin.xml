@@ -1,0 +1,49 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.alibaba.aone.maven2bazel</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Maven2bazel</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="liyuyun.lyy@alibaba-inc.com" url="https://www.yourcompany.com">YourCompany</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Transfer maven project to bazel.<br>
+    <em>most HTML tags may be used</em>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.alibaba.aone.maven2bazel.state.BazelSettings"/>
+    </extensions>
+    <actions>
+        <action id="com.alibaba.aone.maven2bazel.action.SettingsAction"
+                class="com.alibaba.aone.maven2bazel.action.SettingsAction" text="Settings"
+                description="Settings">
+        </action>
+        <action id="com.alibaba.aone.maven2bazel.action.Maven2BazelStartAction"
+                class="com.alibaba.aone.maven2bazel.action.Maven2BazelStartAction" text="Maven->Bazel"
+                description="Maven->Bazel">
+        </action>
+
+        <group id="org.intellij.sdk.action.GroupedActions"
+               text="Maven2Bazel"
+               popup="true">
+            <reference ref="com.alibaba.aone.maven2bazel.action.SettingsAction"/>
+            <reference ref="com.alibaba.aone.maven2bazel.action.Maven2BazelStartAction"/>
+            <add-to-group group-id="ToolsMenu" anchor="after"
+                          relative-to-action="org.intellij.sdk.action.GroupedActions"/>
+        </group>
+    </actions>
+</idea-plugin>

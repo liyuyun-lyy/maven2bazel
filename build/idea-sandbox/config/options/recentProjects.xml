@@ -1,0 +1,32 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Downloads/java/demo">
+          <value>
+            <RecentProjectMetaInfo frameTitle="demo – BUILD" projectWorkspaceId="21wv8grzC2F9fVDo1F6smB92JqU">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-212.4746.92" />
+              <option name="buildTimestamp" value="1627369689823" />
+              <frame x="225" y="25" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1667895798197" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/java/build-buddha">
+          <value>
+            <RecentProjectMetaInfo frameTitle="build-buddha – build-buddha-web/BUILD [build-buddha-web]" projectWorkspaceId="27jek3bQ9Ep2JMkvphNybfCestx">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-212.4746.92" />
+              <option name="buildTimestamp" value="1627369689823" />
+              <frame x="225" y="25" width="1400" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1667896041331" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
